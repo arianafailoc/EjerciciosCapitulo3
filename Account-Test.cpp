@@ -5,19 +5,13 @@
 using namespace std;
 
 int main() {
-    Account myAccount;
-
-    cout << "Initial account name is:" <<myAccount.getName();
-
-
-    cout << "\nPlease enter the account name: ";
-    string theName;
-    getline(cin, theName); 
-    myAccount.setName(theName) ;
-
-
-    cout << "Name in object myAccount is: " << myAccount.getName() <<endl ;
-    
+//Probando el método Withdraw
+    Account account{"Ariana Failoc", 5000};
+    cout << "Balance is $ "<< account.getBalance()<<"\n";
+    account.withdraw(687);
+    cout << "Balance is $ "<< account.getBalance()<<"\n";
+    account.withdraw(6000);
+    cout << "Balance is $ "<< account.getBalance()<<"\n";
 }
 
 

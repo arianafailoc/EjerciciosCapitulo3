@@ -1,4 +1,5 @@
 #include <string>
+#include <iostream>
 class Account {
     public:
     Account(std::string accountName , int initialBalance)
@@ -7,6 +8,18 @@ class Account {
                 balance = initialBalance; 
                 }
             }
+
+        void withdraw(int withdrawAmount) {
+            if (withdrawAmount > 0 && withdrawAmount < balance){
+                balance = balance - withdrawAmount;
+            }
+            else { 
+               std::cout << "Withdrawal amount exceeded account balance.\n"; 
+
+            }
+
+        }
+
     
         void deposit(int depositAmount) {
             if (depositAmount > 0) {
@@ -28,4 +41,10 @@ class Account {
     private : 
         std::string name;
         int balance{5};
+    
+
+
+
 };
+    
+
