@@ -16,6 +16,8 @@ int main() {
     myAccount.setName(theName) ;
 
 
-    cout << "Name in object myAccount is: " << my Account.getName() <<endl ;
+    cout << "Name in object myAccount is: " << myAccount.getName() <<endl ;
     
 }
+
+
